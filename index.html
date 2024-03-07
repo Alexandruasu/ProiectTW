@@ -4,20 +4,30 @@
         <title>CompoAudio</title>
         <meta charset="UTF-8"><!-- codificarea în memorie a caracterelor-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- va fi explicat când ajungem la CSS -->
-        <meta name="keywords" content="CompoAudio, magazin, casti, boxe, sisteme audio, Bucuresti, Sector 4"><!--cuvintele cheie ale paginii; majoritatea motoarelor de căutare ignoră keywords -->
-        <meta name="description" content="Magazinul CompoAudio-magazin fizic si online pentru vanzare componente audio(casti si boxe). Achizionare la magazin sau prin livrare"><!-- descrierea paginii, adesea apare sub link când sunt afișate rezultatele căutării -->
+        <meta name="keywords" content="CompoAudio, magazin, casti, boxe, sisteme audio, amplificatoare, accesorii audio, Bucuresti, Sector 4"><!--cuvintele cheie ale paginii; majoritatea motoarelor de căutare ignoră keywords -->
+        <meta name="description" content="Magazinul CompoAudio-magazin fizic si online pentru vanzare echipamente audio(casti si boxe). Achizionare la magazin sau prin livrare"><!-- descrierea paginii, adesea apare sub link când sunt afișate rezultatele căutării -->
         <meta name="author" content="Alexandru Satalla">
+        <link rel="stylesheet" href="./resurse/css/stil.css" type="text/css">
+        <style>
+        p{
+            color:pink;
+        }
+        body{background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,223,1) 0%, rgba(0,212,255,1) 100%);}
+        </style>
 
-        <link rel="apple-touch-icon" sizes="180x180" href="./resurse/favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="./resurse/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="./resurse/favicon/favicon-16x16.png">
-        <link rel="manifest" href="./resurse/favicon/site.webmanifest">
-        <link rel="mask-icon" href="./resurse/favicon/safari-pinned-tab.svg" color="#5bbad5">
-        <link rel="shortcut icon" href="./resurse/favicon/favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="./resurse/favicon/icon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./resurse/favicon/icon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./resurse/favicon/icon/favicon-16x16.png">
+        <link rel="manifest" href="./resurse/favicon/icon/site.webmanifest">
+        <link rel="mask-icon" href="./resurse/favicon/icon/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="./resurse/favicon/icon/favicon.ico">
         <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="msapplication-config" content="./resurse/favicon/browserconfig.xml">
+        <meta name="msapplication-config" content="./resurse/favicon/icon/browserconfig.xml">
         <meta name="theme-color" content="#ffffff">
     </head>
+
+    
 
     <body>
         <header>
@@ -30,25 +40,53 @@
                             <li><a href="#promotii">Promotii</a></li>
                         </ul>
                     </li>
-                    <li>Produse</li>
+                    <li>Produse
+                        <figure>
+                        <picture>
+                            <source srcset="./resurse/imagini/imagine1.jpg" media="(max-width:700px)">
+                            <source srcset="./resurse/imagini/imagine2.jpg" media="(max-width:700px)">
+                            <source srcset="./resurse/imagini/imagine3.jpg" media="(max-width:700px)">
+                            <img src="./resurse/imagini/imagine1.jpg" alt="casti" width="300" title="Casti"/>
+                        </picture>
+                        <figcaption>Casti</figcaption>
+                    </figure>
+                    </li>
                 </ol>
             </nav>
         </header>
         <main>
             <section id="welcome">
-                <img src="./resurse/imagini/thumb.jpg" alt="casti" width="300px">
                 <h2>Bine ati venit</h2>
+                <p class="intro" style="color:greenyellow; font-variant:small-caps;">Magazinul nostru va ofera o gama variata de produse audio</p>
+                <img src="./resurse/imagini/thumb.jpg" alt="casti" width="300">
+                <br>
                 <a href="https://google.com">as</a>
+                <p>Magazin de echipamente audio cu o gama variata de <b>produse</b></p>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus eveniet vero tempore tempora? Ipsam inventore assumenda harum facere similique, sapiente culpa, ut dolorem vitae excepturi quibusdam quod laudantium nostrum ex.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus eveniet vero tempore tempora? Ipsam inventore assumenda harum facere similique, sapiente culpa, ut dolorem vitae excepturi quibusdam quod laudantium nostrum ex.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus eveniet vero tempore tempora? Ipsam inventore assumenda harum facere similique, sapiente culpa, ut dolorem vitae excepturi quibusdam quod laudantium nostrum ex.</p>
+                <p>Lorem ipsum, dolor sit amet <em>consectetur</em> adipisicing elit. Temporibus eveniet vero tempore tempora? Ipsam inventore assumenda harum facere similique, sapiente culpa, ut dolorem vitae excepturi quibusdam quod laudantium nostrum ex.</p>
             </section>
             <section id="promotii">
                 <h2>Promotii</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus <b>Etiam</b> eveniet vero tempore tempora? Ipsam <abbr title="casti">ac</abbr> inventore assumenda harum facere similique, sapiente culpa, ut dolorem vitae excepturi quibusdam quod laudantium nostrum ex.</p>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus eveniet vero tempore tempora? Ipsam inventore assumenda harum facere similique, sapiente culpa, ut dolorem vitae excepturi quibusdam quod laudantium nostrum ex.</p>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus eveniet vero tempore tempora? Ipsam inventore assumenda harum facere similique, sapiente culpa, ut dolorem vitae excepturi quibusdam quod laudantium nostrum ex.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus eveniet vero tempore tempora? Ipsam inventore assumenda harum facere similique, sapiente culpa, ut dolorem vitae excepturi quibusdam quod laudantium nostrum ex.</p>
-
+                <div class="ifr-video">
+                    <h1>CASTI</h1>
+                    CLIPURI VIDEO 
+                    <a href="https://static.vecteezy.com/system/resources/previews/021/254/622/mp4/a-young-an-in-front-of-a-computer-working-with-sound-listening-to-an-audio-sample-with-headphones-free-video.mp4" target="video">Casti</a>
+                     SAU
+                    <a href="https://static.vecteezy.com/system/resources/previews/001/802/431/mp4/rotating-headphones-with-orange-party-background-free-video.mp4" target="video">Casti v2</a>
+                    <br>
+                    <iframe name="video" width="560" height="315" src="https://www.youtube.com/embed/vKcuDPOzhHA?si=aYp3Fzq7mQfQsO08" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <!-- <iframe name="video1" width="560" height="315" src="https://www.youtube.com/embed/6CsJZxfZsL0?si=-ZhTIcHAEQSWqN5L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                </div>
+                <br>
+                <details><summary>Produsele dumneavoastra</summary>
+                <ul>
+                    <li>boxe</li>
+                    <li>casti</li>
+                </ul>
+                </details>
             <section>
                 <h3>Oferta pachet</h3>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus eveniet vero tempore tempora? Ipsam inventore assumenda harum facere similique, sapiente culpa, ut dolorem vitae excepturi quibusdam quod laudantium nostrum ex.</p>
@@ -58,7 +96,47 @@
             </section>
         </main>
         <footer>
-            
+            <a href="https://www.google.com" target="_blank">Google</a>
+            <!--<a href="fisier.pdf">download/</a> -->
+            <br>
+            <a href="#" title="mergi sus" id="link-top">Hai sus </a>
+            <br>
+            <!-- formula pentru calculul nivelului de presiune sonoră (SPL) -->
+            Formula presiune sonoră
+            <br>
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mi>SPL</mi>
+                <mo>=</mo>
+                <mrow>
+                    <mn>20</mn>
+                    <mo>&#8290;</mo>
+                    <mi>log</mi>
+                    <mo>&#8289;</mo>
+                    <mo>(</mo>
+                    <mfrac>
+                        <mi>P</mi>
+                        <mi>P0</mi>
+                    </mfrac>
+                    <mo>)</mo>
+                </mrow>
+            </math>  
+            <br>
+            <address>
+                Strada x,nr 4 bucuresti
+                <br>
+                <a href="mailto:compo.audio@gmail.com">Adresa Email </a>
+                <br>
+                <a href="tel:0767676767">Telefon</a>
+            </address>
+            <a href="https://maps.app.goo.gl/ojWxkzdVaD35WBEZA" target="_blank">Adresa locație</a>
+            <br>
+            <a href="https://wa.me/40123456789" target="_blank">WhatsApp</a>
+            <br>
+            <a href="./resurse/termeni_si_conditii/Termeni_si_conditii.pdf" download>Termeni si conditii</a>
+            <br>
+            <p><small>Copyright &copy;
+                <time datetime="2021-10-18">18 octombrie 2021</time></small>
+            </p>
         </footer>
-    </body>
+    </body>  
 </html>
