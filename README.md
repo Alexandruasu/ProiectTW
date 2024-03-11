@@ -105,34 +105,42 @@ Platforma oferă o gamă largă de produse, împărțite în următoarele catego
 ## Site-uri similare:
 
 **[Skullcandy:](https://www.skullcandy.com/)**
+
 Pros:
 - Designul futurist și vibrant al site-ului, care se potrivește cu imaginea de brand a Skullcandy.
-- Navigarea simplă și clară, cu accent pe produse și oferte speciale. 
+- Navigarea simplă și clară, cu accent pe produse și oferte speciale.
+
 Cons:
 - Uneori, organizarea produselor poate duce la confuzie, mai ales când vine vorba de modelele similare de căști, cum este cazul la Skull Candy.
 - Unele produse pot avea descrieri limitate sau informații tehnice insuficiente, ceea ce poate face dificilă evaluarea lor și luarea unei decizii de cumpărare informate.
 
 **[JBL:](https://eu.jbl.com/homepage?countrySelector=yes&ged=off)**
+
 Pros:
 - Structura detaliată a categoriilor de produse, ceea ce face găsirea produsului dorit mai ușoară.
 - Designul site-ului este modern și atrăgător, oferind o experiență vizuală plăcută utilizatorilor.
+
 Cons:
 - Uneori, prea multe informații pot copleși utilizatorii noi, ceea ce ar putea afecta experiența de navigare.
 - Putem avea probleme cu site-ul când apăsam pe un produs, de multe ori nu ne va redirecționa către pagina de cumpărare/personalizare a produsului.
 
 **[Bose:](https://www.bose.com/home)**
+
 Pros:
 - Pagina de produse este bine structurată, cu filtre utile pentru a căuta rapid produsele dorite.
 - Secțiunea de blog oferă conținut valoros, cum ar fi articole despre tehnologii noi sau interviuri cu designerii de produse.
 - Pagina principală a site-ului Bose oferă informații captivante și esențiale despre produsele brandului, oferind motive solide pentru a alege produsele lor.
+
 Cons:
 - Uneori, descrierile produselor pot fi prea succinte, lăsând anumite întrebări neadresate pentru potențialii clienți.
 - Animațiile de pe prima pagina pot duce la o durata mai lunga de încărcare a paginii.
 
 **[Bang & Olufsen:](https://www.bang-olufsen.com/en/int)**
+
 Pros:
 - Designul sofisticat și estetica de înaltă calitate reflectă imaginea de brand a Bang & Olufsen.
 - Paginile produselor oferă informații bogate și detaliate despre caracteristicile și specificațiile tehnice ale produselor, permițând clienților să înțeleagă în profunzime produsele înainte de a face o achiziție.
+
 Cons: 
 - Absența unei funcții de căutare poate duce la creșterea timpului necesar pentru a găsi un produs.
 - Prea multe informații pe pagina principală despre prea multe lucruri diferite poate plictisi și încurca utilizatorii în unele situații.
