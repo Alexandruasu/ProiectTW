@@ -5,12 +5,12 @@ body{
     padding-right:var(--spatiere);
 }
 p{
-    color:var(--culoare1);
+    color: grey;
 }
 h2{
     border:2px solid var(--culoare1);
     border-radius: 5px;
 }
-a {
+a{
     color: white;
 }
