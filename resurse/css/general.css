@@ -1,48 +1,54 @@
+body{
+  --culoare6: #F097E1;
+  --culoare-inchisa: rgb(165,13,165);
+  --culoare-deschisa: rgb(165,13,165);
+  --culoare-texts: black;
+  --culoare-text-selectat: white;
+}
+
 #link-top{
     position:fixed;
     bottom:0.3em;
     opacity:0.5;
     left:0.3em;/*right:0.3em;*/
     width:3rem;
-    box-sizing: border-box;
-    height:3rem;
-    line-height:3rem;
+    /* box-sizing: border-box; */
+    height:2.5rem;
+    line-height:2.5rem;
     text-align:center;
-    border:5px solid grey;
-      border-top-color:red;
-      border-bottom-color: yellow;
+
+    border-top: none;
+    border-bottom: none;
+
+    border-right: 5px solid pink;
+    border-left: 5px solid pink;
+
     border-radius:50%;
-    background: rgb(220,220,220);
-    box-shadow:0px 0px 5px 5px white;
+
+    background: transparent;
+    filter: blur(1px);
+    transition: opacity 0.5s linear, filter 0.5s linear;
   }
   #link-top:hover{
     opacity:1;
+    filter: blur(0px);
   }
   #triunghi{
     height:0px;
     width:0;
     display:inline-block;
-    border-bottom:1.5rem solid grey;
+    border-bottom:1.5rem solid gray;
     border-left:1rem solid transparent;
     border-right:1rem solid transparent;
     vertical-align: top;
-    transform: translateY(30%);
+    scale: 0.5;
+    transform: translateY(70%);
     /*transform: scale(1,1);*/
-    transition: transform 1s linear;
+    transition: transform 0.5s linear, filter 0.5s linear, border-bottom 0.5s linear;
   }
-#link-top:hover>#triunghi{
-    transform: scale(2,2);
-    border-bottom : 1.5rem solid red;
-}
-
-#tab-orar th, #tab-orar td{
-    border:3px solid black;
-}
-#tab-orar{
-    border-spacing: 0px;
-    border-collapse: collapse;
-}
-
-#tab-orar th:nth-child(2n+1){
-    background-color: aqua;
-}
+  #link-top:hover>#triunghi{
+      transform: scale(1.2, 1.2);
+      filter: blur(0px);
+      border-bottom:1.5rem solid var(--culoare1);
+      /* border-bottom : 1.5rem solid red; */
+  }

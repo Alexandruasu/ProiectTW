@@ -1,0 +1,145 @@
+nav{
+    --inaltime-meniu:2.5em;
+    --latime-buton:150px;
+    height: var(--inaltime-meniu);
+    background-color: var(--culoare-deschisa);
+}
+/*
+#hamburger, #ch-menu{
+    display: none;
+}
+
+#acasa-mediu{
+    display: none;
+}
+
+.meniu{
+    display: flex;
+}
+
+.meniu ul{
+        display: none;
+}
+
+.meniu, .meniu ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: var(--culoare-deschisa);
+}
+
+*meniu li{
+    border: 1 px solid var(--culoare-inchisa);
+    width:var1 (--latime-buton);
+    height: var(--inaltime-meniu);
+    text-align: center;
+    box-sizing: border-box;
+}
+.meniu li div, .meniu li a{
+    display:block;
+    width:100%;
+    height:100%;
+    cursor: pointer;
+    line-height: var(--inaltime-meniu); 
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: all 1s linear;
+}
+
+.meniu li:hover div, .meniu li:hover a{
+    background-color: var(--culoare-inchisa);
+    color: var(--culoare-text-selectat);
+}
+
+.meniu li:hover>ul{
+    display: block;
+    position: absolute;
+    z-index:100;
+} */
+
+header {
+    background-color: var(--culoare-deschisa-);
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#site-logo {
+    margin-left: 20px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0 20px;
+    display: inline-block;
+    font-size: 24px;
+}
+
+nav {
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav li {
+    position: relative;
+    cursor: pointer;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+nav li:hover {
+    background-color: #555;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+nav li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
+    background-color: purple;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+nav li:hover ul {
+    display: block;
+}
+
+nav li ul li {
+    width: 200px;
+}
+.meniu li:hover>ul{
+    display: block;
+    position: absolute;
+    z-index:100;
+    animation: animatie_suvmeniu 1s linear 1 forwards;
+}
+
+@keyframes animatie_submeniu{
+    100%{
+        opacity: 1;
+        transform: scaleY(1);
+    }
+}

@@ -148,3 +148,4 @@ Cons:
 ## Paleta de Culori Predominante pentru Site-ul CompoAudio
 
 Paleta de culori ale site-ului CompoAudio este inspirată din culorile reci, care sunt adesea asociate cu tehnologia și eleganța. **Albastru**, **movul**, **rozul**, **albul**, **griul** și **negru** sunt alegeri comune în industria echipamentelor audio datorită echilibrului lor între profesionalism și inovație. Aceste culori contribuie la crearea unei estetici corespunzătoare și profesionale pentru site-ul nostru, reflectând în același timp identitatea și valorile noastre ca brand de echipamente audio.
+

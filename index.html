@@ -11,14 +11,10 @@
         <link rel="stylesheet" href="./resurse/css/layout.css" type="text/css">
         <link rel="stylesheet" href="./resurse/css/stil.css" type="text/css">
         <link rel="stylesheet" href="./resurse/css/general.css" type="text/css">
+        <link rel="stylesheet" href="./resurse/css/nav.css" type="text/css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Madimi+One&display=swap" rel="stylesheet">
-
-        <style>
-        body{background: rgb(2,0,36);
-        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,223,1) 0%, rgba(0,212,255,1) 100%);}
-        </style>
 
         <script src="https://kit.fontawesome.com/9d161aaedc.js" crossorigin="anonymous"></script>
         <link rel="apple-touch-icon" sizes="180x180" href="./resurse/favicon/icon/apple-touch-icon.png">
@@ -37,16 +33,25 @@
     <body>
         <header>
             <h1>CompoAudio</h1>
+            <br>
             <nav>
-                <ol>
+                <ul>
                     <li>Acasa
                         <ul>
                             <li><a href="#welcome">Welcome</a></li>
                             <li><a href="#promotii">Promotii</a></li>
+                            <li><a href="#orar">Orar</a></li>
+                            <li><a href="#anunturi">Anunturi</a></li>
                         </ul>
                     </li>
                     <li>Produse
-                    <figure>
+                        <ul>
+                            <li><a href="#casti">Casti</a></li>
+                            <li><a href="#boxe">Boxe</a></li>
+                            <li><a href="#amplificatoare">Amplificatoare</a></li>
+                            <li><a href="#accesorii">Accesorii</a></li>
+                        </ul>
+                    <!-- <figure>
                         <picture>
                             <source srcset="./resurse/imagini/imagine1.jpg" media="(max-width:700px)">
                             <source srcset="./resurse/imagini/imagine2.jpg" media="(max-width:700px)">
@@ -54,9 +59,9 @@
                             <img src="./resurse/imagini/imagine1.jpg" alt="casti" width="300" title="Casti"/>
                         </picture>
                         <figcaption>Casti</figcaption>
-                    </figure>
+                    </figure> -->
                     </li>
-                </ol>
+                </ul>
             </nav>
         </header>
         <main>
@@ -122,13 +127,20 @@
                 <p>Beneficiază de o reducere de 50% la toate produsele din categoria de <b>Căști</b>.</p>
                 <div class="ifr-video">
                     <h2>CASTI</h2>
-                    CLIPURI VIDEO 
+                    <!-- CLIPURI VIDEO 
                     <a href="https://static.vecteezy.com/system/resources/previews/021/254/622/mp4/a-young-an-in-front-of-a-computer-working-with-sound-listening-to-an-audio-sample-with-headphones-free-video.mp4" target="video">Casti</a>
                      SAU
-                    <a href="https://static.vecteezy.com/system/resources/previews/001/802/431/mp4/rotating-headphones-with-orange-party-background-free-video.mp4" target="video">Casti v2</a>
+                    <a href="https://static.vecteezy.com/system/resources/previews/001/802/431/mp4/rotating-headphones-with-orange-party-background-free-video.mp4" target="video">Casti v2</a> -->
                     <br>
-                    <iframe name="video" width="560" height="315" src="https://www.youtube.com/embed/vKcuDPOzhHA?si=aYp3Fzq7mQfQsO08" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <!-- <iframe name="video1" width="560" height="315" src="https://www.youtube.com/embed/6CsJZxfZsL0?si=-ZhTIcHAEQSWqN5L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                    <div class="row">
+                        <iframe name="video" width="560" height="315" src="https://www.youtube.com/embed/vKcuDPOzhHA?si=aYp3Fzq7mQfQsO08" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    
+                        <div id="frame-tabs" class="column" style="padding-right: 20px;">
+                            <a href="https://static.vecteezy.com/system/resources/previews/021/254/622/mp4/a-young-an-in-front-of-a-computer-working-with-sound-listening-to-an-audio-sample-with-headphones-free-video.mp4"
+                                target="video">Casti</a>
+                            <a href="https://static.vecteezy.com/system/resources/previews/001/802/431/mp4/rotating-headphones-with-orange-party-background-free-video.mp4"
+                                target="video">Casti V2</a>
+                        </div>
+                    </div>
                 </div>
                 <br>         
             <section>
@@ -140,6 +152,7 @@
             </section>
             <section id="orar">
                 <h2>Orar</h2>
+                <div style="width: 100%; overflow: hidden; border-radius: 15px; border: 2px solid black">
                 <table id="tab-orar">
                     <thead>
 
@@ -211,6 +224,8 @@
                     </tbody>
                     <tfoot><tr><td colspan="6">Închis cu ocazia sărbătorilor legale.</td></tr></tfoot>
                 </table> 
+            </div>
+            <caption>Orarul de funcționare al magazinului</caption>
             </section>
             <figure id="fig1" class="fg-img">
                 <img src="resurse/imagini/Jbl_flip_5.png" alt="Jbl_flip_5" width="500" height="300">
@@ -220,37 +235,39 @@
             <img src="resurse/imagini/JBL_Live_Pro_2.png" alt="JBL_Live_Pro_2">
             <figcaption>JBL Live Pro 2</figcaption>
             </figure>
-            <figure  id="fig3" class="fg-img">
-            <img src="resurse/imagini/Live_670_NC_Black_4.png" alt="Live_670_NC_Black_4" height="300">
-            <figcaption>Live 670 NC Black 4</figcaption>
-            </figure>
-            <section id="anunturi">
-                <h2>Anunțuri</h2> <p><time datetime="2022-01-05">5 ianuarie 2022</time> <strong>No more Covid!!!!</strong></p>
-               
-                <p><time datetime="2020-07-05">5 iulie 2020</time> Am adăugat o prăjitură noua în meniu</p>
-                <p><time datetime="2020-09-15">15 septembrie 2020</time> Am adăugat un fursec nou în meniu</p>
-                <p><time datetime="2020-12-20">20 decembrie 2020</time> Nu avem nimic de anunțat, dar ne era dor de voi.</p>
-                <p><time datetime="2020-12-28">28 decembrie 2020</time> Am adăugat o prăjitură noua în meniu</p>
-                <p><time datetime="2021-01-01">1 ianuarie 2021</time> Un an nou fericit!</p>
-                <p><time datetime="2021-02-11">11 februarie 2021</time> Studiile au arătat că prăjiturile sunt cele mai sănătoase alimente. 
-                    E adevărat că doar studiile noastre, dar astea sunt detalii. </p>
-            </section>
-            <section id="index-intrebari">
-                <h2>Întrebări frecvente</h2>
-                <details><summary>Produsele dumneavoastră provoacă afecțiuni dentare?</summary>
-                    <p>Da!</p>
-                </details>
-                <details><summary>Produsele dumneavoastră provoacă afecțiuni ale sistemului digestiv (precum diabetul)?</summary>
-                    <p>Da!</p>
-                </details>
-                <details><summary>Produsele dumneavoastră provoacă obezitate?</summary>
-                    <p>Foarte! Da!</p>
-                </details>
-                <details><summary>Sunteți cumva asociați cu medicii dentiști, medicii gastroenterologi, companiile farmaceutice și sălile de Fitness?</summary>
-                    <p>Ne rezervăm dreptul de a nu răspunde la această întrebare; mulțumim pentru înțelegere!</p>
-                </details>
-            </section>
-        </div>
+            </div>
+            <div id="grid-pagina-2">
+                <figure  id="fig3" class="fg-img">
+                    <img src="resurse/imagini/Live_670_NC_Black_4.png" alt="Live_670_NC_Black_4" height="300">
+                    <figcaption>Live 670 NC Black 4</figcaption>
+                    </figure>
+                    <section id="anunturi">
+                        <h2>Anunțuri</h2> <p><time datetime="2022-01-05">5 ianuarie 2022</time> <strong>No more Covid!!!!</strong></p>
+                       
+                        <p><time datetime="2020-07-05">5 iulie 2020</time> Am adăugat o prăjitură noua în meniu</p>
+                        <p><time datetime="2020-09-15">15 septembrie 2020</time> Am adăugat un fursec nou în meniu</p>
+                        <p><time datetime="2020-12-20">20 decembrie 2020</time> Nu avem nimic de anunțat, dar ne era dor de voi.</p>
+                        <p><time datetime="2020-12-28">28 decembrie 2020</time> Am adăugat o prăjitură noua în meniu</p>
+                        <p><time datetime="2021-01-01">1 ianuarie 2021</time> Un an nou fericit!</p>
+                        <p><time datetime="2021-02-11">11 februarie 2021</time> Studiile au arătat că prăjiturile sunt cele mai sănătoase alimente. 
+                            E adevărat că doar studiile noastre, dar astea sunt detalii. </p>
+                    </section>
+                    <section id="index-intrebari">
+                        <h2>Întrebări frecvente</h2>
+                        <details><summary>Produsele dumneavoastră provoacă afecțiuni dentare?</summary>
+                            <p>Da!</p>
+                        </details>
+                        <details><summary>Produsele dumneavoastră provoacă afecțiuni ale sistemului digestiv (precum diabetul)?</summary>
+                            <p>Da!</p>
+                        </details>
+                        <details><summary>Produsele dumneavoastră provoacă obezitate?</summary>
+                            <p>Foarte! Da!</p>
+                        </details>
+                        <details><summary>Sunteți cumva asociați cu medicii dentiști, medicii gastroenterologi, companiile farmaceutice și sălile de Fitness?</summary>
+                            <p>Ne rezervăm dreptul de a nu răspunde la această întrebare; mulțumim pentru înțelegere!</p>
+                        </details>
+                    </section>
+            </div>
         </main>
          
         <footer>
