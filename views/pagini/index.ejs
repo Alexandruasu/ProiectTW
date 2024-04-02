@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <!-- comentariu-->
+    <head>
+        <%- include("../fragmente/head.ejs")%>
+
+        <meta name="keywords" content="CompoAudio, magazin, casti, boxe, sisteme audio, audio, amplificatoare, accesorii audio, Bucuresti, Sector 4"><!--cuvintele cheie ale paginii; majoritatea motoarelor de căutare ignoră keywords -->
+        <meta name="description" content="Magazinul CompoAudio-magazin fizic si online pentru vanzare echipamente audio(casti si boxe). Achizionare la magazin sau prin livrare"><!-- descrierea paginii, adesea apare sub link când sunt afișate rezultatele căutării -->
+        <title>CompoAudio</title>
+    </head>
+
+    
+
+    <body>
+    <%- include("../fragmente/header.ejs")%> 
+    <div id = "banner">Satalla Alexandru</div>
+    <div id = "watermark">
+        <p>Satalla</p>
+        <p>Alexandru</p>
+    </div>
+        <main>
+            <div id="grid-pagina">
+            <section id="welcome">
+                <h2>Bine ati venit</h2>
+                <p>Ip: <%- locals.ip %></p>
+                <p class="intro" style="color:purple; font-variant:small-caps;">Magazinul nostru va ofera o gama variata de produse audio</p>
+                <img src="./resurse/imagini/thumb.jpg" alt="casti" width="300">
+                <br>
+                <p><abbr title="CompoAudio">Magazinul</abbr> vă aduce cele mai bune <b>echipamente audio</b>, de la <b>Căști</b> și <b>Boxe</b> până la <b>Amplificatoare</b> și <b>Accesorii audio</b>.</p>
+                <p>Descoperiți o <em>experiență audio superioară</em>, fie că sunteți acasă sau în mișcare!</p>
+                <details>
+                    <summary>Produsele noastre</summary>
+                    <ul>
+                        <li><b>Căști</b>
+                            <details>
+                                <summary>Detalii Căști</summary>
+                                <ul>
+                                    <li>Căști over-ear (circum-aurale)</li>
+                                    <li>Căști on-ear (supra-aurale)</li>
+                                    <li>Căști in-ear (intra-aurale)</li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li><b>Boxe</b>
+                            <details>
+                                <summary>Detalii Boxe</summary>
+                                <ul>
+                                    <li>Boxe de podea</li>
+                                    <li>Boxe de raft</li>
+                                    <li>Boxe satelit</li>
+                                    <li>Boxe portabile cu bluetooth</li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li><b>Amplificatoare</b>
+                            <details>
+                                <summary>Detalii Amplificatoare</summary>
+                                <ul>
+                                    <li>Amplificatoare stereo</li>
+                                    <li>Amplificatoare integrate</li>
+                                    <li>Amplificatoare pentru căști</li>
+                                </ul>
+                            </details>
+                        </li>
+                        <li><b>Accesorii audio</b>
+                            <details>
+                                <summary>Detalii Accesorii</summary>
+                                <ul>
+                                    <li>Cabluri</li>
+                                    <li>Suporturi și standuri</li>
+                                    <li>Alte accesorii</li>
+                                </ul>
+                            </details>
+                        </li>
+                    </ul>
+                </details>
+                      
+            </section>
+            <section id="promotii">
+                <h2>Promotii</h2>
+                <p>Beneficiați acum de oferte speciale la <b>Căști</b>, <b>Boxe</b> și <b>Accesorii audio</b>!</p>
+                <p>Beneficiază de o reducere de 50% la toate produsele din categoria de <b>Căști</b>.</p>
+                <div class="ifr-video">
+                    <h2>CASTI</h2>
+                    <!-- CLIPURI VIDEO 
+                    <a href="https://static.vecteezy.com/system/resources/previews/021/254/622/mp4/a-young-an-in-front-of-a-computer-working-with-sound-listening-to-an-audio-sample-with-headphones-free-video.mp4" target="video">Casti</a>
+                     SAU
+                    <a href="https://static.vecteezy.com/system/resources/previews/001/802/431/mp4/rotating-headphones-with-orange-party-background-free-video.mp4" target="video">Casti v2</a> -->
+                    <br>
+                    <div class="row">
+                        <iframe name="video" width="560" height="315" src="https://www.youtube.com/embed/vKcuDPOzhHA?si=aYp3Fzq7mQfQsO08" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    
+                        <div id="frame-tabs" class="column" style="padding-right: 20px;">
+                            <a href="https://static.vecteezy.com/system/resources/previews/021/254/622/mp4/a-young-an-in-front-of-a-computer-working-with-sound-listening-to-an-audio-sample-with-headphones-free-video.mp4"
+                                target="video">Casti</a>
+                            <a href="https://static.vecteezy.com/system/resources/previews/001/802/431/mp4/rotating-headphones-with-orange-party-background-free-video.mp4"
+                                target="video">Casti V2</a>
+                        </div>
+                    </div>
+                </div>
+                <br>         
+            <section>
+                <h3>Oferta pachet</h3>
+                <p>Experimentați sunetul de înaltă calitate la un preț special combinând <b>căștile</b> preferate cu <b>boxele</b> potrivite pentru o experiență audio completă!</p>
+                <p>Alegeți din gama noastră variată de <b>căști</b> și <b>boxe</b> și beneficiați de un discount suplimentar la achiziționarea acestor produse împreună.</p>
+                <p>Indiferent dacă sunteți un pasionat de muzică, gamer sau cinefil, oferta noastră de pachet vă oferă o soluție completă pentru nevoile dumneavoastra de divertisment <em>audio</em>.</p>
+            </section>
+            </section>
+            <section id="orar">
+                <h2>Orar</h2>
+                <div style="width: 100%; overflow: hidden; border-radius: 15px; border: 2px solid black">
+                <table id="tab-orar">
+                    <thead>
+
+                        <tr>
+                            <th>Cod</th>
+                            <th>Perioadă</th>
+                            <th>Zi</th>
+                            <th>Interval dimineata</th>
+                            <th>Pauza de masa</th>
+                            <th>Interval seară</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td rowspan="5">Zile<br/>Lucrătoare</td>
+                            <td>Luni</td>
+                            <td>10-12</td>
+                            <td>12-14</td>
+                            <td>14-20</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            
+                            <td>Marti</td>
+                            <td>9-12</td>
+                            <td>12-14</td>
+                            <td>14-21</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            
+                            <td>Miercuri</td>
+                            <td>9-11</td>
+                            <td>11-13</td>
+                            <td>14-21</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            
+                            <td>Joi</td>
+                            <td>9-11</td>
+                            <td>11-13</td>
+                            <td>14-21</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            
+                            <td>Vineri</td>
+                            <td>9-12</td>
+                            <td>12-14</td>
+                            <td>14-19</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td rowspan="2">Weekend</td>
+                            <td>Sambata</td>
+                            <td>10-12</td>
+                            <td>12-13</td>
+                            <td>13-16</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Duminica</td>
+                            <td>10-14</td>
+                            <td>-</td>
+                            <td>inchis</td>
+                        </tr>
+                    </tbody>
+                    <tfoot><tr><td colspan="6">Închis cu ocazia sărbătorilor legale.</td></tr></tfoot>
+                </table> 
+            </div>
+            <caption>Orarul de funcționare al magazinului</caption>
+            </section>
+            <figure id="fig1" class="fg-img">
+                <img src="resurse/imagini/Jbl_flip_5.png" alt="Jbl_flip_5" width="500" height="300">
+                <figcaption>Jbl flip 5</figcaption>
+            </figure>
+            <figure id="fig2" class="fg-img">
+            <img src="resurse/imagini/JBL_Live_Pro_2.png" alt="JBL_Live_Pro_2">
+            <figcaption>JBL Live Pro 2</figcaption>
+            </figure>
+            </div>
+            <div id="grid-pagina-2">
+                <figure  id="fig3" class="fg-img">
+                    <img src="resurse/imagini/Live_670_NC_Black_4.png" alt="Live_670_NC_Black_4" height="300">
+                    <figcaption>Live 670 NC Black 4</figcaption>
+                    </figure>
+                    <section id="anunturi">
+                        <h2>Anunțuri</h2> <p><time datetime="2022-01-05">5 ianuarie 2022</time> <strong>No more Covid!!!!</strong></p>
+                       
+                        <p><time datetime="2020-07-05">5 iulie 2020</time> Am adăugat o prăjitură noua în meniu</p>
+                        <p><time datetime="2020-09-15">15 septembrie 2020</time> Am adăugat un fursec nou în meniu</p>
+                        <p><time datetime="2020-12-20">20 decembrie 2020</time> Nu avem nimic de anunțat, dar ne era dor de voi.</p>
+                        <p><time datetime="2020-12-28">28 decembrie 2020</time> Am adăugat o prăjitură noua în meniu</p>
+                        <p><time datetime="2021-01-01">1 ianuarie 2021</time> Un an nou fericit!</p>
+                        <p><time datetime="2021-02-11">11 februarie 2021</time> Studiile au arătat că prăjiturile sunt cele mai sănătoase alimente. 
+                            E adevărat că doar studiile noastre, dar astea sunt detalii. </p>
+                    </section>
+                    <section id="index-intrebari">
+                        <h2>Întrebări frecvente</h2>
+                        <details><summary>Produsele dumneavoastră provoacă afecțiuni dentare?</summary>
+                            <p>Da!</p>
+                        </details>
+                        <details><summary>Produsele dumneavoastră provoacă afecțiuni ale sistemului digestiv (precum diabetul)?</summary>
+                            <p>Da!</p>
+                        </details>
+                        <details><summary>Produsele dumneavoastră provoacă obezitate?</summary>
+                            <p>Foarte! Da!</p>
+                        </details>
+                        <details><summary>Sunteți cumva asociați cu medicii dentiști, medicii gastroenterologi, companiile farmaceutice și sălile de Fitness?</summary>
+                            <p>Ne rezervăm dreptul de a nu răspunde la această întrebare; mulțumim pentru înțelegere!</p>
+                        </details>
+                    </section>
+            </div>
+        </main>
+        <%- include("../fragmente/footer.ejs")%>
+    </body> 
+  
+</html>
+

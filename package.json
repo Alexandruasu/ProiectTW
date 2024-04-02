@@ -1,0 +1,26 @@
+{
+  "name": "tehnici-web",
+  "version": "1.0.0",
+  "description": "CompoAudio site web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexandruasu/ProiectTW.git"
+  },
+  "keywords": [
+    "componente"
+  ],
+  "author": "Satalla Alexandru",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alexandruasu/ProiectTW/issues"
+  },
+  "homepage": "https://github.com/Alexandruasu/ProiectTW#readme",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.3"
+  }
+}

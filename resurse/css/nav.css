@@ -1,0 +1,153 @@
+@keyframes zoomIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+nav {
+  --inaltime-meniu: 2.5em;
+  --latime-buton: 150px;
+  height: var(--inaltime-meniu);
+  background-color: var(--culoare-deschisa);
+}
+
+#hamburger {
+  display: none;
+}
+
+#ch-menu {
+  display: none;
+}
+
+#acasa-mediu {
+  display: none;
+}
+
+.meniu {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: var(--culoare-deschisa);
+}
+.meniu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: var(--culoare-deschisa);
+  display: none;
+  transform-origin: top left;
+  transition: transform 0.5s ease;
+  transform: scale(0);
+}
+.meniu ul li a {
+  position: relative;
+  text-decoration: none;
+}
+.meniu ul li a::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  background: var(--culoare-text);
+  opacity: 0;
+  transition: opacity 0.9s ease-in-out;
+  left: 25%;
+  bottom: 0;
+}
+.meniu ul li a::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  background: var(--culoare-text);
+  opacity: 0;
+  transition: opacity 0.9s ease-in-out;
+  left: 25%;
+  bottom: 4px;
+}
+.meniu ul li a:hover::before {
+  opacity: 1;
+}
+.meniu ul li a:hover::after {
+  opacity: 1;
+}
+.meniu ul li::before {
+  display: none;
+}
+.meniu li {
+  width: var(--latime-buton);
+  height: var(--inaltime-meniu);
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+  width: var(--latime-buton);
+  height: var(--inaltime-meniu);
+  text-align: center;
+  box-sizing: border-box;
+}
+.meniu li div {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  line-height: var(--inaltime-meniu);
+  color: var(--culoare-text);
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: all 1s linear;
+}
+.meniu li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  line-height: var(--inaltime-meniu);
+  color: var(--culoare-text);
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: all 1s linear;
+}
+.meniu li:hover > div {
+  background-color: var(--culoare-inchisa);
+  color: var(--culoare-text-selectat);
+}
+.meniu li:hover > a {
+  background-color: var(--culoare-inchisa);
+  color: var(--culoare-text-selectat);
+}
+.meniu li:hover > ul {
+  display: block;
+  position: absolute;
+  z-index: 100;
+  transform: scale(1);
+  animation: zoomIn 0.5s ease;
+}
+.meniu li:hover::before {
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 100%;
+  transform: scaleY(1) translateY(-50%);
+}
+.meniu li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: transparent;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.5);
+  transform-origin: top;
+  transform: scaleY(0);
+  transition: transform 0.5s ease, background-color 0.5s ease, height 0.5s ease;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 700px) {
+  .meniu li:nth-child(1) div > span:nth-child(1) {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=nav.css.map */
