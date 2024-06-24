@@ -1,0 +1,55 @@
+<script src="/resurse/js/tema.js"></script>
+<header>
+  <h1>Compo <span>Audio</span></h1>
+  <button id="schimba_tema"> Schimba tema</button>
+  <nav>
+      <label id="hamburger" for="ch-menu">
+          <img src="/resurse/imagini/Hamburger_icon_alb.png" alt="menu">
+      </label>
+      <input id="ch-menu" type="checkbox">
+      <ul class="meniu">
+          <li>
+              <div id="acasa"><span>Acasă</span>
+                  <span class="fas fa-home"></span>
+              </div>
+              <div id="acasa-mediu">
+                  <span class="fas fa-home"></span>
+              </div>
+              <ul>
+                  <li><a href="/index#welcome">Bine ați venit</a></li>
+                  <li><a href="/index#promotii">Promoții</a></li>
+                  <li><a href="/index#anunturi">Anunțuri</a></li>
+                  <li><a href="/index#index-intrebari">Intrebari</a></li>
+                  <li><a href="/index#orar">Orar</a></li>
+              </ul>
+          </li>
+          <li><a href="/inregistrare"><span>Inregistrare</span></a></li>
+          <li><div><span>Despre</span></div>
+              <ul>                        
+                  <li><a href="/despre#prezentare">Prezentare</a></li>
+                  <li><a href="/despre#istoric">Istoric</a></li>
+                  <li><a href="/despre#motivatie">Motivatie</a></li>
+                  <li><a href="/despre#galerie">Galerie</a></li>
+              </ul>
+          </li>
+          <li>
+              <div><a href="/produse"><span>Produse</span></a></div>
+              <ul>
+                  <li><a href="/produse">Toate</a></li>
+                  <li><a href="/produse?tip=cofetarie">Prajituri</a></li>
+                  <li><a href="/produse?tip=gelaterie">Gelaterie</a></li>
+                  <li><a href="/produse?tip=patiserie">Patiserie</a></li>
+                  <li><a href="#casti">Casti</a></li>
+                  <li><a href="#boxe">Boxe</a></li>
+                  <li><a href="#amplificatoare">Amplificatoare</a></li>
+                  <li><a href="#accesorii">Accesorii</a></li>
+              </ul>
+          </li>
+          <li><a href="/despre"><span>Despre noi</span></a></li>
+          <li><a href="/cos-virtual"><span>Cos</span></a></li>
+          <li><a href="#"><span>Contact</span></a></li>
+          <%-include("submeniu-administrare.ejs")%>
+          <%-include("submeniu-utilizator-logat.ejs")%>
+      </ul>
+  </nav>
+</header>

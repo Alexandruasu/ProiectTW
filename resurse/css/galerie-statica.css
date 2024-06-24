@@ -1,0 +1,111 @@
+/* Stiluri pentru containerul galeriei */
+#galerie-statica {
+  padding-left: var(--padding-intern);
+  padding-right: var(--padding-intern);
+}
+
+/* Stiluri pentru grid-ul galeriei */
+#grid-galerie {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 0.5em;
+  column-gap: 0.5em;
+  counter-reset: imgnr 0; 
+}
+
+#grid-galerie img {
+  width: 100%;
+  transition: filter 0.8s ease; 
+}
+
+#grid-galerie figcaption {
+  text-align: center;
+  counter-increment: imgnr 1; 
+  transition: color 0.8s ease, text-shadow 0.8s ease; 
+}
+
+#grid-galerie figcaption::before {
+  content: counter(imgnr); 
+}
+
+/* Stil pentru efectul de sepia doar pe imaginea la hover */
+#grid-galerie img:hover {
+  filter: sepia(100%); 
+}
+
+/* Stil pentru text și umbra textului la hover */
+#grid-galerie img:hover + figcaption {
+  color: transparent; 
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+
+/* Stiluri pentru responsive */
+
+/* Stil pentru ecrane mici */
+@media screen and (max-width: 500px) {
+  #grid-galerie {
+    display: block; 
+    row-gap: 0;
+    column-gap: 0; 
+  }
+}
+
+#grid-galerie figcaption::before {
+  content: counter(imgnr, lower-roman) ") ";
+}
+
+#grid-galerie figure:nth-child(1) {
+  grid-area: 1/1/2/2;
+}
+
+#grid-galerie figure:nth-child(2) {
+  grid-area: 1/2/2/3;
+}
+
+#grid-galerie figure:nth-child(3) {
+  grid-area: 2/1/3/2;
+}
+
+#grid-galerie figure:nth-child(4) {
+  grid-area: 2/3/3/4;
+}
+
+#grid-galerie figure:nth-child(5) {
+  grid-area: 3/2/4/3;
+}
+
+#grid-galerie figure:nth-child(6) {
+  grid-area: 3/3/4/4;
+}
+
+#grid-galerie figure:nth-child(7) {
+  grid-area: 4/1/5/2;
+}
+
+#grid-galerie figure:nth-child(8) {
+  grid-area: 4/3/5/4;
+}
+
+#grid-galerie figure:nth-child(9) {
+  grid-area: 5/1/6/2;
+}
+
+#grid-galerie figure:nth-child(10) {
+  grid-area: 5/2/6/3;
+}
+
+#grid-galerie figure:nth-child(11) {
+  grid-area: 6/1/7/2;
+}
+
+#grid-galerie figure:nth-child(12) {
+  grid-area: 6/3/7/4;
+}
+
+#grid-galerie figure:nth-child(13) {
+  grid-area: 7/2/8/3;
+}
+
+#grid-galerie figure:nth-child(14) {
+  grid-area: 7/3/8/4;
+}

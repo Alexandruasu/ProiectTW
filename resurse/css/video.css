@@ -1,0 +1,21 @@
+/* Subtitrare */
+::cue {
+    background-color: rgba(0, 0, 0, 0.3); /* Fundal negru cu transparență de 0.3 */
+    color: white; /* Text de culoare albă */
+    text-shadow: 2px 2px 4px black; /* Umbra textului neagră */
+}
+
+/* Text specific pentru susul și josul videoclipului */
+::cue(v[lang="en"]::cue-region) {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+::cue(v[lang="en"]::cue-region.up) {
+    top: 0;
+}
+
+::cue(v[lang="en"]::cue-region.down) {
+    bottom: 0;
+}

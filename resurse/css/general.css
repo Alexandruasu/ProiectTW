@@ -1,0 +1,113 @@
+body {
+  --culoare6: #F097E1;
+  --culoarea6_1: pink;
+  --culoare-inchisa: rgb(165,13,165);
+  --culoare-deschisa: rgb(165,13,165);
+  --culoare-texts: black;
+  --culoare-text-selectat: white;
+  background: var(--culoare-inchisa);/*pentru etapa 6*/
+}
+body.dark {
+  --culoare-inchisa: black;
+}
+#link-top {
+  position: fixed;
+  bottom: 0.3em;
+  opacity: 0.5;
+  left: 0.3em;
+  width: 3rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  border-top: none;
+  border-bottom: none;
+  border-right: 5px solid var(--culoarea6_1);
+  border-left: 5px solid var(--culoarea6_1);
+  border-radius: 50%;
+  background: transparent;
+  filter: blur(1px);
+  transition: opacity 0.5s linear, filter 0.5s linear;
+}
+#link-top:hover {
+  opacity: 1;
+  filter: blur(0px);
+}
+
+#triunghi {
+  height: 0px;
+  width: 0;
+  display: inline-block;
+  border-bottom: 1.5rem solid gray;
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  vertical-align: top;
+  scale: 0.5;
+  transform: translateY(70%);
+  transition: transform 0.5s linear, filter 0.5s linear, border-bottom 0.5s linear;
+}
+#link-top:hover #triunghi {
+  transform: scale(1.2, 1.2);
+  filter: blur(0px);
+  border-bottom: 1.5rem solid var(--culoare1);
+}
+
+#video-player::cue(b) {
+  color: var(--culoare-texts);
+  text-shadow: 2px 2px 2px var(--culoare-text-selectat);
+  width: 30%;
+  height: 30%;
+}
+#video-player {
+  width: 40%;
+}
+
+/*etapa 4*/
+/* a:visited {
+    color: var(--culoare5);
+}
+ 
+a[href^="http"] {
+    position: relative;
+    color: var(--culoare-texts);
+}
+ 
+a[href^="http"]::before {
+    content: "⮳";
+    font-size: 150%;
+    position: absolute;
+    left: -1em;
+    transition: color 0.3s ease;
+}
+ 
+a[href^="http"]:hover::before {
+    color: var(--culoare4);
+}
+ 
+#grid-pagina a {
+    position: relative;
+    color: var(--culoare-texts);
+}
+ 
+#grid-pagina a::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-image: radial-gradient(circle, var(--culoare3) 0%, var(--culoare3) 40%, transparent 80%, transparent 100%);
+    background-position: center;
+    background-size: 0;
+    transition: background-size 0.3s ease;
+}
+ 
+#grid-pagina a:hover::before {
+    background-size: 200%;
+}
+ 
+a:active {
+    outline: 2px solid var(--culoare6);
+} */
+
+
+/*# sourceMappingURL=general.css.map */

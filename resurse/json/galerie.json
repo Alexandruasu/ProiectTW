@@ -1,0 +1,118 @@
+{
+	"cale_galerie":"resurse/imagini/galerie",
+	"imagini": [
+		{
+			"fisier_imagine":"imagine1.jpg",
+			"nume_poza":"Nume imagine",
+			"continut_alternativ":"text alternativ imagine",
+			"descriere_poza":"Brioșe",
+			"intervale_zile":[["luni", "miercuri"],["sambata","sambata"]],
+			"luni":["ianuarie","februarie","iunie","martie","aprilie","mai","iunie","iulie","august","septembrie","octombrie","noiembrie","decembrie"]
+		},
+		{
+			"fisier_imagine":"imagine2.jpg",
+			"nume_poza":"Nume imagine",
+			"continut_alternativ":"text alternativ imagine",
+			"descriere_poza":"Clătite cu dulceață",
+			"intervale_zile":[["luni", "miercuri"],["sambata","sambata"]],
+			"luni":["ianuarie","februarie","iunie","martie","aprilie","mai","iunie","iulie","august","septembrie","octombrie","noiembrie","decembrie"]
+			
+		},
+		{
+			"fisier_imagine":"imagine3.jpg",
+			"nume_poza":"Nume imagine",
+			"continut_alternativ":"text alternativ imagine",
+			"descriere_poza":"Gogoși glazurate",
+			"intervale_zile":[["luni", "miercuri"],["sambata","sambata"]],
+			"luni":["ianuarie","februarie","iunie","martie","aprilie","mai","iunie","iulie","august","septembrie","octombrie","noiembrie","decembrie"]
+		},
+		{
+			"fisier_imagine":"imagine4.jpg",
+			"nume_poza":"Nume imagine",
+			"continut_alternativ":"text alternativ imagine",
+			"descriere_poza":"Tort cu scorțisoară",
+			"intervale_zile":[["luni", "miercuri"],["sambata","sambata"]],
+			"luni":["ianuarie","februarie","iunie","martie","aprilie","mai","iunie","iulie","august","septembrie","octombrie","noiembrie","decembrie"]
+		},
+		{
+			"fisier_imagine":"imagine5.jpg",
+			"nume_poza":"Nume imagine",
+			"continut_alternativ":"text alternativ imagine",
+			"descriere_poza":"Prăjitură cu ciocolată",
+			"intervale_zile":[["luni", "miercuri"],["sambata","sambata"]],
+			"luni":["ianuarie","februarie","iunie","martie","aprilie","mai","iunie","iulie","august","septembrie","octombrie","noiembrie","decembrie"]	
+		},
+		{
+			"fisier_imagine":"imagine6.jpg",
+			"nume_poza":"Nume imagine",
+			"continut_alternativ":"text alternativ imagine",
+			"descriere_poza":"Prăjitură cu ciocolată",
+			"intervale_zile":[["luni", "miercuri"],["sambata","sambata"]],
+			"luni":["ianuarie","februarie","iunie","martie","aprilie","mai","iunie","iulie","august","septembrie","octombrie","noiembrie","decembrie"]	
+		},
+		{
+			"fisier_imagine":"imagine7.jpg",
+			"nume_poza":"Nume imagine",
+			"continut_alternativ":"text alternativ imagine",
+			"descriere_poza":"Tartă cu afine",
+			"intervale_zile":[["luni", "miercuri"],["sambata","sambata"]],
+			"luni":["ianuarie","februarie","iunie","martie","aprilie","mai","iunie","iulie","august","septembrie","octombrie","noiembrie","decembrie"]
+		},
+		{
+			"fisier_imagine":"imagine8.jpg",
+			"nume_poza":"Nume imagine",
+			"continut_alternativ":"text alternativ imagine",
+			"descriere_poza":"Tort special",
+			"intervale_zile":[["luni", "miercuri"],["sambata","sambata"]],
+			"luni":["ianuarie","februarie","iunie","martie","aprilie","mai","iunie","iulie","august","septembrie","octombrie","noiembrie","decembrie"]
+		},
+		{
+			"fisier_imagine":"imagine9.jpg",
+			"nume_poza":"Nume imagine",
+			"continut_alternativ":"text alternativ imagine",
+			"descriere_poza":"Tort special",
+			"intervale_zile":[["luni", "miercuri"],["sambata","sambata"]],
+			"luni":["ianuarie","februarie","iunie","martie","aprilie","mai","iunie","iulie","august","septembrie","octombrie","noiembrie","decembrie"]
+		},
+		{
+			"fisier_imagine":"imagine10.jpg",
+			"nume_poza":"Nume imagine",
+			"continut_alternativ":"text alternativ imagine",
+			"descriere_poza":"Tort special",
+			"intervale_zile":[["luni", "miercuri"],["sambata","sambata"]],
+			"luni":["ianuarie","februarie","iunie","martie","aprilie","mai","iunie","iulie","august","septembrie","octombrie","noiembrie","decembrie"]
+		},
+		{
+			"fisier_imagine":"imagine11.jpg",
+			"nume_poza":"Nume imagine",
+			"continut_alternativ":"text alternativ imagine",
+			"descriere_poza":"Tort special",
+			"intervale_zile":[["luni", "miercuri"],["sambata","sambata"]],
+			"luni":["ianuarie","februarie","iunie","martie","aprilie","mai","iunie","iulie","august","septembrie","octombrie","noiembrie","decembrie"]
+		},
+		{
+			"fisier_imagine":"imagine12.jpg",
+			"nume_poza":"Nume imagine",
+			"continut_alternativ":"text alternativ imagine",
+			"descriere_poza":"Tort special",
+			"intervale_zile":[["luni", "miercuri"],["sambata","sambata"]],
+			"luni":["ianuarie","februarie","iunie","martie","aprilie","mai","iunie","iulie","august","septembrie","octombrie","noiembrie","decembrie"]
+		},
+		{
+			"fisier_imagine":"imagine13.jpg",
+			"nume_poza":"Nume imagine",
+			"continut_alternativ":"text alternativ imagine",
+			"descriere_poza":"Tort special",
+			"intervale_zile":[["luni", "miercuri"],["sambata","sambata"]],
+			"luni":["ianuarie","februarie","iunie","martie","aprilie","mai","iunie","iulie","august","septembrie","octombrie","noiembrie","decembrie"]
+		},
+		{
+			"fisier_imagine":"imagine14.jpg",
+			"nume_poza":"Nume imagine",
+			"continut_alternativ":"text alternativ imagine",
+			"descriere_poza":"Tort special",
+			"intervale_zile":[["luni", "miercuri"],["sambata","sambata"]],
+			"luni":["ianuarie","februarie","iunie","martie","aprilie","mai","iunie","iulie","august","septembrie","octombrie","noiembrie","decembrie"]
+		}
+	]
+}

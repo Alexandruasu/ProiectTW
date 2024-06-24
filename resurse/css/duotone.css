@@ -1,0 +1,44 @@
+.efect-duotone {
+    position: relative;
+    width: 300px; 
+    height: 300px; 
+    background-image: url('/resurse/imagini/thumb.jpg'); 
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.efect-duotone::before, .efect-duotone::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+.efect-duotone::before {
+    background-color: cornflowerblue; 
+    mix-blend-mode: multiply;
+}
+
+.efect-duotone::after {
+    background-color: purple; 
+    mix-blend-mode: screen;
+}
+
+
+.efect-duotone:hover::before {
+    background-color: blue; 
+}
+
+.efect-duotone:hover::after {
+    background-color: coral; 
+}
+
+
+.efect-duotone::before,
+.efect-duotone::after {
+    transition: background-color 1.5s ease;
+}

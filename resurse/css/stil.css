@@ -1,0 +1,136 @@
+:root {
+    --culoare1: #4e34e3;
+    --culoare2: #c334e3;
+    --culoare3: #8934e3;
+    --culoare4: #e334b7;
+    --culoare5: #9d5ae6;
+    --culoare-text: white;
+    --spatiere:1em;
+    --text-mare: 16px;
+    --text-mediu: 14px;
+    --text-mic: 12px;
+    padding-left:var(--spatiere);
+    padding-right:var(--spatiere);
+    background: rgb(2,0,36);
+        background: linear-gradient(90deg, var(--culoare3) 0%, var(--culoare2) 100%);
+}
+body.dark {
+}
+body {
+    margin: 0;
+}
+
+iframe {
+    width: 100%;
+}
+
+img {
+    max-width: 300px;
+    object-fit: contain;
+}
+/* p{
+    color: var(--culoare-text);
+} */
+h2{
+    border:2px solid var(--culoare1);
+    border-radius: 5px;
+}
+a {
+    color: var(--culoare-text);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+}
+
+#orar {
+    text-align: center;
+}
+
+#tab-orar th, #tab-orar td{
+    border:3px solid black;
+}
+#tab-orar{
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+
+table tr:nth-child(even) {
+    background-color: var(--culoare1);
+}
+
+table tr:nth-child(odd) {
+    background-color: var(--culoare2);
+}
+
+table tr:hover {
+    background-color: var(--culoare3);
+}
+
+#tab-orar > tbody > tr:nth-child(1) > td:nth-child(2),
+#tab-orar > tbody > tr:nth-child(6) > td:nth-child(2),
+#tab-orar > tbody > tr > td:nth-child(1) {
+    background-color: var(--culoare2);
+}
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+#frame-tabs {
+    text-align: center;
+    justify-content: flex-start;
+    border-radius: 5px 0px 0px 5px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#frame-tabs a {
+    border: 3px solid pink;
+    text-decoration: none;
+    padding: 15px 10px 15px 10px;
+    width: 60%;
+    margin-bottom: 5px;
+    background-color: var(--culoare3);
+    color: white;
+    border-radius: 0px 5px 5px 0px;
+    transition:
+        background-color 0.5s ease,
+        color 0.5s ease,
+        padding-right 0.5s ease;
+}
+
+#frame-tabs a:hover {
+    /* transform: scale(1.5, 1); */
+    padding-right: 50px;
+}
+
+table td:hover, table th:hover {
+    background-color: var(--culoare-text); 
+    transition: background-color 0.3s ease;
+}
+
+#tab-orar{
+    overflow-x: auto;
+}
+
+#tab-orar table{
+    overflow: hidden;
+}
+footer{
+    text-align: center;
+}
+p, b, a {
+    transition: font-size 1s ease;
+}
