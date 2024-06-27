@@ -255,6 +255,7 @@
                     var vLuni=["ianuarie", "februarie", "martie", "aprilie", "mai", "iunie", "iulie", "august", "septembrie", "octombrie", "noiembrie", "decembrie"];
                     var d=new Date();
                     var lunaCurenta=vLuni[d.getMonth()];
+                    console.log(locals.imagini)
                     for (let imag of locals.imagini) { 
                         if (imag?.luni?.includes(lunaCurenta)) {
                         %>
@@ -264,7 +265,7 @@
                                     <img src="<%= imag.fisier_imagine %>" alt="componente">
                                 </picture>
                             
-                            <figcaption><%= imag.descriere%></figcaption>
+                            <figcaption><%= imag.descriere_poza %></figcaption>
                             </figure>
                     <% } %>
                 <% } %>

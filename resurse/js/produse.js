@@ -48,17 +48,33 @@ window.addEventListener("load",function(){
             }
         }
     })
-    document.getElementById("resetare").onclick= function(){                        
-        document.getElementById("inp-nume").value="";                
-        document.getElementById("inp-pret").value=document.getElementById("inp-pret").min;        
-        document.getElementById("inp-categorie").value="toate";        
-        document.getElementById("i_rad4").checked=true;        
-        var produse=document.getElementsByClassName("produs");        
-        document.getElementById("infoRange").innerHTML="(0)";        
-        for (let prod of produse){            
-            prod.style.display="block";        
-        }    
+    // document.getElementById("resetare").onclick= function(){                        
+    //     document.getElementById("inp-nume").value="";                
+    //     document.getElementById("inp-pret").value=document.getElementById("inp-pret").min;        
+    //     document.getElementById("inp-categorie").value="toate";        
+    //     document.getElementById("i_rad4").checked=true;        
+    //     var produse=document.getElementsByClassName("produs");        
+    //     document.getElementById("infoRange").innerHTML="(0)";        
+    //     for (let prod of produse){            
+    //         prod.style.display="block";        
+    //     }    
+    // }
+    //etapa 6.9
+    document.getElementById("resetare").onclick = function() {                        
+        if (confirm("Sunteți sigur că doriți să resetați filtrele?")) {
+            document.getElementById("inp-nume").value = "";                
+            document.getElementById("inp-pret").value = document.getElementById("inp-pret").min;        
+            document.getElementById("inp-categorie").value = "toate";        
+            document.getElementById("i_rad4").checked = true;        
+            var produse = document.getElementsByClassName("produs");        
+            document.getElementById("infoRange").innerHTML = "(0)";        
+            for (let prod of produse) {            
+                prod.style.display = "block";        
+            }
+            
+        }
     }
+    
     function sorteaza(semn){
         var produse=document.getElementsByClassName("produs");
         let v_produse= Array.from(produse);
