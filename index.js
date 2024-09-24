@@ -18,12 +18,12 @@ const puppeteer=require('puppeteer');
 
 var client= new Client({database:"cti_2024",
         user:"alex",
-        password:"Alex",
+        password:"alexu",
         host:"localhost",
         port:5432});
 client.connect();
 
-client.query("select * from prajituri", function(err,rez){
+client.query("select * from echipamente_audio", function(err,rez){
   console.log(err);
   console.log("-----------------");
   console.log(rez);
@@ -72,6 +72,8 @@ app.set("view engine", "ejs");
 app.use("/resurse", express.static(__dirname + "/resurse"));
 app.use("/poze_uploadate", express.static(__dirname + "/poze_uploadate"));
 app.use("/node_modules", express.static(__dirname + "/node_modules"));
+
+
 
 // --------------------------utilizatori online ------------------------------------------
 
@@ -421,9 +423,9 @@ app.get("/produse", function(req, res){
   if (req.query.tip){
       conditieQuery=` where tip_produs='${req.query.tip}'`
   }
-  client.query("select * from unnest(enum_range(null::categ_prajitura))", function(err, rezOptiuni){
+  client.query("select * from unnest(enum_range(null:: tipuri_echipamente_audio))", function(err, rezOptiuni){
 
-      client.query(`select * from prajituri ${conditieQuery}`, function(err, rez){
+      client.query(`select * from echipamente_audio ${conditieQuery}`, function(err, rez){
           if (err){
               console.log(err);
               afisareEroare(res, 2);
@@ -435,8 +437,26 @@ app.get("/produse", function(req, res){
   });
 })
 
+app.set('views', './views');
+app.use(async (req, res, next) => {
+  try {
+      if (!client._connected) {
+          await client.connect();
+      }
+      const result = await client.query("SELECT DISTINCT tip_produs FROM echipamente_audio"); 
+      res.locals.tipuriProdus = result.rows.map(row => row.tip_produs);
+      next();
+  } catch (err) {
+      console.error(err);
+      res.status(500).send("Eroare la server");
+      client.end();
+      next();
+  }
+});
+
+
 app.get("/produs/:id", function(req,res){
-  client.query(`select * from prajituri where id=${req.params.id}`, function(err,rez){
+  client.query(`select * from echipamente_audio where id=${req.params.id}`, function(err,rez){
     if(err){
       console.log(err);
       afisareEroare(res,2);
@@ -446,7 +466,13 @@ app.get("/produs/:id", function(req,res){
     }
   })
 })  
+app.get('/index', (req, res) => {
+  res.render('pagini/index');
+});
 
+app.get('/produse', (req, res) => {
+  res.render('pagini/produse');
+});
 // ---------------------------------  cos virtual --------------------------------------
 
 
@@ -459,7 +485,7 @@ app.post("/produse_cos",function(req, res){
     console.log(req.body);
     if(req.body.ids_prod.length!=0){
         //TO DO : cerere catre AccesBD astfel incat query-ul sa fie `select nume, descriere, pret, gramaj, imagine from prajituri where id in (lista de id-uri)`
-        AccesBD.getInstanta().select({tabel:"prajituri", campuri:"nume,descriere,pret,gramaj,imagine".split(","),conditiiAnd:[`id in (${req.body.ids_prod})`]},
+        AccesBD.getInstanta().select({tabel:"echipamente_audio", campuri:"nume,descriere,pret,greutate_grame,imagine".split(","),conditiiAnd:[`id in (${req.body.ids_prod})`]},
         function(err, rez){
             if(err)
                 res.send([]);
@@ -478,7 +504,7 @@ cale_qr=__dirname+"/resurse/imagini/qrcode";
 if (fs.existsSync(cale_qr))
   fs.rmSync(cale_qr, {force:true, recursive:true});
 fs.mkdirSync(cale_qr);
-client.query("select id from prajituri", function(err, rez){
+client.query("select id from echipamente_audio", function(err, rez){
     for(let prod of rez.rows){
         let cale_prod=obGlobal.protocol+obGlobal.numeDomeniu+"/produs/"+prod.id;
         //console.log(cale_prod);
@@ -512,7 +538,7 @@ app.post("/cumpara",function(req, res){
 
     if (req?.utilizator?.areDreptul?.(Drepturi.cumparareProduse)){
         AccesBD.getInstanta().select({
-            tabel:"prajituri",
+            tabel:"echipamente_audio",
             campuri:["*"],
             conditiiAnd:[`id in (${req.body.ids_prod})`]
         }, function(err, rez){

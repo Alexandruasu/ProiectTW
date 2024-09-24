@@ -2,41 +2,42 @@ window.addEventListener("load",function(){
     document.getElementById("inp-pret").onchange=function(){
         document.getElementById("infoRange").innerHTML=`(${this.value})`
     }
+    
     document.getElementById("filtrare").addEventListener("click", function(){
         
         let inpNume= document.getElementById("inp-nume").value.toLowerCase().trim()
 
-        let vRadio = document.getElementsByName("gr_rad")
-        let inpCalorii;
-        for(let r of vRadio){
+        let vRadioDecibeli = document.getElementsByName("gr_rad");
+        let inpDecibeli;
+        for(let r of vRadioDecibeli){
             if(r.checked){
-                inpCalorii = r.value;
+                inpDecibeli = r.value;
                 break;
             }
         }
-        let minCalorii, maxCalorii
-        if(inpCalorii!="toate"){
-            let aux=inpCalorii.split(":")
-            minCalorii = parseInt(aux[0])
-            maxCalorii = parseInt(aux[1])
-               
+
+        let minDecibeli, maxDecibeli;
+        if(inpDecibeli != "toate"){
+            let aux = inpDecibeli.split(":");
+            minDecibeli = parseInt(aux[0]);
+            maxDecibeli = parseInt(aux[1]);
         }
+
 
         let inpPret= parseInt(document.getElementById("inp-pret").value)
 
-        let inpCateg= document.getElementById("inp-categorie").value.toLowerCase().trim()
+        let inpCateg= document.getElementById("inp-tip_produs").value.toLowerCase().trim()
         produse = document.getElementsByClassName("produs")
         for(let produs of produse ){
             let valNume = produs.getElementsByClassName("val-nume")[0].innerHTML.toLowerCase().trim()
             let cond1= valNume.startsWith(inpNume)
 
-
-            let valCalorii=parseInt(produs.getElementsByClassName("val-calorii")[0].innerHTML)
-            let cond2=(inpCalorii=="toate" || (minCalorii<=valCalorii && valCalorii<maxCalorii))
+            let valDecibeli = parseInt(produs.getElementsByClassName("val-numar_decibeli")[0].innerHTML);
+            let cond2 = (inpDecibeli == "toate" || (minDecibeli <= valDecibeli && valDecibeli < maxDecibeli));
 
             let valPret=parseFloat(produs.getElementsByClassName("val-pret")[0].innerHTML)
             let cond3=(valPret>=inpPret)
-            let valCateg=produs.getElementsByClassName("val-categorie")[0].innerHTML
+            let valCateg=produs.getElementsByClassName("val-tip_produs")[0].innerHTML
             let cond4=(inpCateg=="toate" || inpCateg==valCateg)
 
 
@@ -48,16 +49,18 @@ window.addEventListener("load",function(){
             }
         }
     })
-    document.getElementById("resetare").onclick= function(){                        
-        document.getElementById("inp-nume").value="";                
-        document.getElementById("inp-pret").value=document.getElementById("inp-pret").min;        
-        document.getElementById("inp-categorie").value="toate";        
-        document.getElementById("i_rad4").checked=true;        
-        var produse=document.getElementsByClassName("produs");        
-        document.getElementById("infoRange").innerHTML="(0)";        
-        for (let prod of produse){            
-            prod.style.display="block";        
-        }    
+    document.getElementById("resetare").onclick = function() {
+        if (confirm("Ești sigur că vrei să resetezi toate filtrele?")) {
+            document.getElementById("inp-nume").value = "";
+            document.getElementById("inp-pret").value = document.getElementById("inp-pret").min;
+            document.getElementById("inp-tip_produs").value = "toate";
+            document.getElementById("i_rad4").checked = true;
+            var produse = document.getElementsByClassName("produs");
+            document.getElementById("infoRange").innerHTML = "(0)";
+            for (let prod of produse) {
+                prod.style.display = "block";
+            }
+        }
     }
     function sorteaza(semn){
         var produse=document.getElementsByClassName("produs");

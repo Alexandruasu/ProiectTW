@@ -4,12 +4,13 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas: "welcome welcome welcome welcome" "orar orar promotii promotii" "fig1 fig2 promotii promotii" "fig1 fig2 promotii promotii" "galerie galerie galerie galerie";
 }
-#grid-pagina > * {
+#grid-pagina > *, section {
   outline: 2px solid skyblue;
   padding: 1em;
   background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
 }
+
 #grid-pagina > figure {
   margin: 0;
 }
@@ -33,11 +34,11 @@
   margin: 0;
 }
 
-html {
-  font-family: "Madimi One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: var(--text-mare);
+html, body {
+  font-family: "Madimi One", sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+  font-size: var(--text-mare) !important;
 }
 
 .intro-oferta {

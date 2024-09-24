@@ -1,7 +1,7 @@
 <script src="/resurse/js/tema.js"></script>
 <header>
   <h1>Compo <span>Audio</span></h1>
-  <button id="schimba_tema"> Schimba tema</button>
+  <button id="schimba_tema"><i class="fas fa-sun"></i> Schimba tema</button>
   <nav>
       <label id="hamburger" for="ch-menu">
           <img src="/resurse/imagini/Hamburger_icon_alb.png" alt="menu">
@@ -24,7 +24,7 @@
               </ul>
           </li>
           <li><a href="/inregistrare"><span>Inregistrare</span></a></li>
-          <li><div><span>Despre</span></div>
+          <li><div><span>Despre noi</span></div>
               <ul>                        
                   <li><a href="/despre#prezentare">Prezentare</a></li>
                   <li><a href="/despre#istoric">Istoric</a></li>
@@ -35,17 +35,14 @@
           <li>
               <div><a href="/produse"><span>Produse</span></a></div>
               <ul>
-                  <li><a href="/produse">Toate</a></li>
-                  <li><a href="/produse?tip=cofetarie">Prajituri</a></li>
-                  <li><a href="/produse?tip=gelaterie">Gelaterie</a></li>
-                  <li><a href="/produse?tip=patiserie">Patiserie</a></li>
-                  <li><a href="#casti">Casti</a></li>
-                  <li><a href="#boxe">Boxe</a></li>
-                  <li><a href="#amplificatoare">Amplificatoare</a></li>
-                  <li><a href="#accesorii">Accesorii</a></li>
-              </ul>
+                <li><a href="/produse">Toate</a></li>
+                <% if (typeof tipuriProdus !== 'undefined') { %>
+                    <% tipuriProdus.forEach(function(tip) { %>
+                        <li><a href="/produse?tip=<%= tip %>"><%= tip %></a></li>
+                    <% }) %>
+                <% } %>
+            </ul>
           </li>
-          <li><a href="/despre"><span>Despre noi</span></a></li>
           <li><a href="/cos-virtual"><span>Cos</span></a></li>
           <li><a href="#"><span>Contact</span></a></li>
           <%-include("submeniu-administrare.ejs")%>

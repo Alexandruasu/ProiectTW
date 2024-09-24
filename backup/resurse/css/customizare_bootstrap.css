@@ -6740,6 +6740,31 @@ textarea.form-control-lg {
     mask-position: -200% 0%;
   }
 }
+*,
+*::before,
+*::after {
+  box-sizing: content-box;
+}
+
+.row {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+  display: none;
+  flex-wrap: none;
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.row > * {
+  flex-shrink: 0;
+  width: 45%;
+  max-width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  margin-top: 0;
+}
+
 .clearfix::after {
   display: block;
   clear: both;

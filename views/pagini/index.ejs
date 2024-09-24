@@ -110,7 +110,7 @@
                      SAU
                     <a href="https://static.vecteezy.com/system/resources/previews/001/802/431/mp4/rotating-headphones-with-orange-party-background-free-video.mp4" target="video">Casti v2</a> -->
                     <br>
-                    <div class="row">
+                    <div class="row" id="vid-row">
                         <iframe name="video" width="560" height="315" src="https://www.youtube.com/embed/vKcuDPOzhHA?si=aYp3Fzq7mQfQsO08" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    
                         <div id="frame-tabs" class="column" style="padding-right: 20px;">
                             <a href="https://static.vecteezy.com/system/resources/previews/021/254/622/mp4/a-young-an-in-front-of-a-computer-working-with-sound-listening-to-an-audio-sample-with-headphones-free-video.mp4"
@@ -131,7 +131,7 @@
             </section>
             <section id="orar">
                 <h2>Orar</h2>
-                <div style="width: 100%; overflow: hidden; border-radius: 15px; border: 2px solid black">
+                <div style="width: 100%; overflow: auto; border-radius: 15px; border: 2px solid black">
                 <table id="tab-orar">
                     <thead>
 
@@ -221,29 +221,30 @@
                     <figcaption>Live 670 NC Black 4</figcaption>
                     </figure>
                     <section id="anunturi">
-                        <h2>Anunțuri</h2> <p><time datetime="2022-01-05">5 ianuarie 2022</time> <strong>No more Covid!!!!</strong></p>
-                       
-                        <p><time datetime="2020-07-05">5 iulie 2020</time> Am adăugat o prăjitură noua în meniu</p>
-                        <p><time datetime="2020-09-15">15 septembrie 2020</time> Am adăugat un fursec nou în meniu</p>
-                        <p><time datetime="2020-12-20">20 decembrie 2020</time> Nu avem nimic de anunțat, dar ne era dor de voi.</p>
-                        <p><time datetime="2020-12-28">28 decembrie 2020</time> Am adăugat o prăjitură noua în meniu</p>
-                        <p><time datetime="2021-01-01">1 ianuarie 2021</time> Un an nou fericit!</p>
-                        <p><time datetime="2021-02-11">11 februarie 2021</time> Studiile au arătat că prăjiturile sunt cele mai sănătoase alimente. 
-                            E adevărat că doar studiile noastre, dar astea sunt detalii. </p>
-                    </section>
+                        <h2>Anunțuri</h2>
+                        <p><time datetime="2022-01-05">5 ianuarie 2022</time> <strong>Lansare nouă! Casca audio model 2022 disponibilă acum!</strong></p>
+                    
+                        <p><time datetime="2020-07-05">5 iulie 2020</time> Am adăugat în ofertă un nou amplificator de sunet</p>
+                        <p><time datetime="2020-09-15">15 septembrie 2020</time> Noua gamă de boxe portabile a sosit!</p>
+                        <p><time datetime="2020-12-20">20 decembrie 2020</time> Promoții de sărbători la toate produsele!</p>
+                        <p><time datetime="2020-12-28">28 decembrie 2020</time> Reduceri speciale la căști</p>
+                        <p><time datetime="2021-01-01">1 ianuarie 2021</time> Un an nou plin de sunet și muzică de calitate!</p>
+                        <p><time datetime="2021-02-11">11 februarie 2021</time> Studiile noastre arată că muzica bună îmbunătățește starea de bine.
+                            E adevărat că sunt studiile noastre, dar cine ar putea contrazice asta? </p>
+                    </section>                    
                     <section id="index-intrebari">
                         <h2>Întrebări frecvente</h2>
-                        <details><summary>Produsele dumneavoastră provoacă afecțiuni dentare?</summary>
-                            <p>Da!</p>
+                        <details><summary>Produsele dumneavoastră sunt compatibile cu alte branduri?</summary>
+                            <p>Da, majoritatea produselor noastre sunt compatibile cu diverse branduri și dispozitive, asigurându-vă o integrare fără probleme.</p>
                         </details>
-                        <details><summary>Produsele dumneavoastră provoacă afecțiuni ale sistemului digestiv (precum diabetul)?</summary>
-                            <p>Da!</p>
+                        <details><summary>Este necesară asistență tehnică pentru instalarea produselor?</summary>
+                            <p>Nu este necesară asistență tehnică specializată pentru majoritatea produselor noastre, acestea fiind proiectate pentru o instalare ușoară și intuitivă. Totuși, oferim suport tehnic gratuit dacă aveți nevoie de ajutor.</p>
                         </details>
-                        <details><summary>Produsele dumneavoastră provoacă obezitate?</summary>
-                            <p>Foarte! Da!</p>
+                        <details><summary>Ce garanție oferiți pentru produsele audio?</summary>
+                            <p>Toate produsele noastre sunt acoperite de o garanție de minim 1 an care protejează împotriva defectelor de fabricație și problemele tehnice.</p>
                         </details>
-                        <details><summary>Sunteți cumva asociați cu medicii dentiști, medicii gastroenterologi, companiile farmaceutice și sălile de Fitness?</summary>
-                            <p>Ne rezervăm dreptul de a nu răspunde la această întrebare; mulțumim pentru înțelegere!</p>
+                        <details><summary>Există posibilitatea de upgrade sau schimb pentru echipamente mai vechi?</summary>
+                            <p>Da, oferim opțiuni de upgrade și posibilități de schimb pentru echipamentele mai vechi, astfel încât clienții noștri să poată beneficia de cele mai noi tehnologii.</p>
                         </details>
                     </section>
             </div>
@@ -255,6 +256,7 @@
                     var vLuni=["ianuarie", "februarie", "martie", "aprilie", "mai", "iunie", "iulie", "august", "septembrie", "octombrie", "noiembrie", "decembrie"];
                     var d=new Date();
                     var lunaCurenta=vLuni[d.getMonth()];
+                    console.log(locals.imagini)
                     for (let imag of locals.imagini) { 
                         if (imag?.luni?.includes(lunaCurenta)) {
                         %>
@@ -264,7 +266,7 @@
                                     <img src="<%= imag.fisier_imagine %>" alt="componente">
                                 </picture>
                             
-                            <figcaption><%= imag.descriere%></figcaption>
+                            <figcaption><%= imag.descriere_poza %></figcaption>
                             </figure>
                     <% } %>
                 <% } %>

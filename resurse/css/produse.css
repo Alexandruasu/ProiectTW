@@ -37,10 +37,10 @@ main{
 }
 .grid-produse .produs .info-prod{
     display:flex;
+    justify-content: center;
     background-color: var(--cl-marcare);
 }
 .grid-produse .produs .info-prod p{
-    width:30%;
     text-align:center;
     font-weight:bold;
 }
